@@ -1,0 +1,26 @@
+# COCO 2017 dataset http://cocodataset.org
+# Download command: bash yolov5/data/get_coco2017.sh
+# Train command: python train.py --data ./data/coco.yaml
+# Dataset should be placed next to yolov5 folder:
+#   /parent_folder
+#     /coco
+#     /yolov5
+
+
+# train and val datasets (image directory or *.txt file with image paths)
+train: ./data/tl/yolo_formats/images_train  # 118k images
+val: ./data/tl/yolo_formats/images_val  # 5k images
+
+# number of classes
+nc: 12
+
+# class names
+names: ['tl', 'red_stop_left', 'green_go', 'red_stop', 'green_number', 
+'green_go_left', 'red_number', 'yellow_number', 'yellow_warning', 
+'green_go_u-turn', 'yellow_warning_left', 'green_go_straight']
+
+# Print classes
+# with open('data/coco.yaml') as f:
+#   d = yaml.load(f, Loader=yaml.FullLoader)  # dict
+#   for i, x in enumerate(d['names']):
+#     print(i, x)
