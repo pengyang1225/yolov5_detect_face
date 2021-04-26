@@ -1,6 +1,8 @@
-# YoloV5 with ONNX and TensorRT
+# YoloV5 添加了人脸关键点分支，已经完成了trt的部署 
+可支持onnx导出和trt部署
+ trt部署链接
+ https://github.com/pengyang1225/yolov5_trt_deepsort
 
-如果你需要稳定版,请切换到 yolov5_mask 分支, 这个版本会不断的更新到master.
 
 使用之前两个须知:
 
